@@ -1,2 +1,2 @@
-# winston-debts
+# Winston Debts
 How much were the drinks?
