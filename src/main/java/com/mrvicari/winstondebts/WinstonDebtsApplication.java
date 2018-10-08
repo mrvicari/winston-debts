@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WinstonDebtsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WinstonDebtsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WinstonDebtsApplication.class, args);
+    }
 }
