@@ -1,5 +1,12 @@
 language: java
 jdk: oraclejdk8
 
+addons:
+  sonarcloud:
+    organization: "mrvicari-github"
+    token:
+      secure: 71efc1b2653ec27f3601850aa7f4dcad708260f3
+
 script:
 - ./mvnw clean install -B
+- ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
