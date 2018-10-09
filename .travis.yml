@@ -7,6 +7,11 @@ addons:
     token:
       secure: 71efc1b2653ec27f3601850aa7f4dcad708260f3
 
+deploy:
+  provider: heroku
+  api_key: 44c18ca7-d087-465d-8462-58ef0d740f72
+  app: winston-debts
+
 script:
 - ./mvnw clean install -B
 - ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
