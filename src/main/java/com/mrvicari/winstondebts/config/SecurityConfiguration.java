@@ -20,7 +20,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     private DataSource dataSource;
 
-    private String authQuery = "select username, password, isEnabled from Account where username=?";
+    private String authQuery = "select username, password, true from Account where username=?";
     private String authorityQuery = "select username, authority from Role where username=?";
     private String realmName = "WINSTONDEBTS_REALM";
 
